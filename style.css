@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:Times, Times New Roman, Georgia, serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161623;
+}
+.container{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-position: cover;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap ;
+    z-index: 1;
+}
+body::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background:linear-gradient(#f00,rgb(95, 15, 144));
+    clip-path:circle(20% at right 90%);
+}
+body::after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background:linear-gradient(rgb(35, 54, 150),rgb(95, 15, 144));
+    clip-path:circle(20% at 10% 10%);
+}
+.card{
+    position: relative;
+    width: 280px;
+    height: 170px;
+    box-shadow:20px 20px 40px rgba(0,0,0,0.4);
+    border-radius: 14px;
+    background:rgba(255,255,255,0.05) ;
+    overflow: hidden;
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    margin: 30px;
+    display: flex;
+    backdrop-filter: blur(4px);
+}
+.debit-card{
+    text-align: left;
+    margin: 11px;
+    padding:15px;
+}
+.visa{
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+}
+.chip{
+    width: 100px;
+    height: 70px;
+    position: relative;
+    right:120px;
+    bottom: -37px;
+
+}
+.bank-name{
+    width: 80px;
+    height: 70px;
+    position: absolute;
+    right: 0px;
+    top: 25px;;
+    padding: 0px;
+
+}
+.number{
+  position: absolute;
+   top: 83px;
+   letter-spacing: 2.9px;   
+   margin:20px; 
+}
+.card-holder-name{
+    position: absolute;
+    right: 140px;
+    bottom: 10px;;
+}
+.exp{
+    letter-spacing: 1px;
+    font-size: 0.5em;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    bottom: 40px;
+    left: 80px;
+
+}
+.black{
+    position: absolute;
+    background: black;
+    width:900px;
+    height: 34px;
+    top: 20px;
+}
+.white{
+    background-color: antiquewhite;
+    width:220px;
+    height: 30px;
+    margin-left: 10px;
+    bottom:50px;
+    position: absolute;
+    
+}
+.num{
+    right: 20px;
+    top:95px;
+    position: absolute;
+    background-color: rgb(222, 214, 214);
+    color:black;
+    
+}
+.authorized{
+    font-size: small;
+    bottom:90px;
+    position: absolute;
+    font-size: 12px;
+    right: 0px;
+}
+.validity{
+    bottom:90px;
+    position: absolute;
+    font-size: 12px;
+    left: 9px;
+    letter-spacing: px;
+}
+.lorem-text{
+    bottom:12px;
+    position: absolute;
+    font-size: x-small;
+    right: 20px;
+    left:20px
+   
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlassMorphism Card </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <div class="card">
+            <div class="debit-card">Debit Card</div>
+            <div class="bank-name">Bank Name</div>
+            <div class="number">
+                <p>4585 7161 8030 6769</p>
+            </div>
+            <p class="exp">EXPRIY DATE  12/24</p>
+
+            <div class="card-holder-name">Card Holder Name</div>
+            <img src="visa.png" class="visa" alt="visa">
+            <img src="chip.png" class="chip" alt="chip">
+        </div>
+        <div class="card">
+           <div class="black"></div>
+           <p class="authorized">AUTORIZED SIGNATURE</p>
+           <p class="validity">Not Valid Unless Signed</p>
+           <div class="white"></div>
+           <div class="num">123</div>
+           <div class="lorem-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sint magnam est expedita, ratione ipsum.</div>
+        
+        </div>
+    </section>
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 400,
+            glare:true,
+            'max-glare':1,
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+</html>
